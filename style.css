@@ -1,8 +1,73 @@
-.tarjeta {
-    background-color: blueviolet;
-    height: 37vh;
-    width: 10vw;
-    text-align: center;
-    padding: 10vh;
-    
+* {
+  font-family: "Ubuntu", sans-serif;
 }
+
+h1 {
+  color: #fcf0f3;
+}
+
+body {
+  background-color: #041014;
+}
+
+.card {
+  background-color: #145369;
+  height: 50vh;
+  width: 20vw;
+  border-radius: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  /* -webkit-box-shadow: 7px 7px 6px rgba(37, 150, 190,1); */
+  margin-left: 0px;
+  position: relative;
+}
+
+.card img {
+  height: 10vh;
+  display: flex;
+}
+
+.card h2,
+p {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  color: #fcf0f3;
+}
+
+.grupo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.enlace-tarjeta {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.enlace-tarjeta :hover {
+  box-shadow: 7px 7px 6px rgba(37, 150, 190, 1);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover::after {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
