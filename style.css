@@ -137,3 +137,10 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+
+.home-logo img{
+  height: 10vh;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+}
